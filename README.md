@@ -12,7 +12,7 @@ pip install openai-image
 ```
 
 
-** 2. Recieve your OpenAI API KEY **
+**2. Recieve your OpenAI API KEY**
 
 https://platform.openai.com/account/api-keys
 
@@ -24,7 +24,7 @@ put this key to settings.py file
 API_KEY = 'your-secret-openai-api-key'
 ```
 
-** 3. Set image size **
+**3. Set image size**
 
 settings.py:
 
@@ -35,17 +35,17 @@ PIC_SIZE = '256x256'
 (options :'256x256', '512x512', '1024x1024')
 
 
-** 4. Mkdir images **
+**4. Mkdir images**
 
 Create folder 'images' (foder for ready images)
 
-** 5. Use openai_image **
+**5. Use openai_image**
 
 ```
 import openai_image
 ```
 
-* Example1: *
+* Example1:*
 
 ```
 import openai_image
@@ -59,7 +59,7 @@ Your image file ready: /images/helicopter.jpg
 
 
 
-* Example2: *
+* Example2:*
 
 ```
 import openai_image
