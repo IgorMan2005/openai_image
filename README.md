@@ -1,6 +1,10 @@
 # openai_image
 Python script for generating image from text by Open AI
 
+
+<image src="https://igorman2005.github.io/images/openai-image.jpg" alt="openai_image">
+
+
 **1. Install openai & openai-image**
 
 
@@ -53,9 +57,11 @@ import openai_image
 openai_image.get_image()
 
 ```
-Prompt target text: **helicopter**
+Prompt target text: **blue bird**
 
-Your image file ready: /images/helicopter.jpg
+<image src="https://igorman2005.github.io/images/blue_bird.jpg" alt="openai_image blue bird">
+
+Your image file ready: **/images/blue_bird.jpg**
 
 
 
@@ -64,10 +70,13 @@ Your image file ready: /images/helicopter.jpg
 ```
 import openai_image
 
-openai_image.get_image('helicopter')
+openai_image.get_image('Alice in Wonderland')
 
 ```
-Your image file ready: /images/helicopter.jpg
+
+<image src="https://igorman2005.github.io/images/Alice_in_Wonderland.jpg" alt="openai image Alice in Wonderland">
+
+Your image file ready: **/images/Alice_in_Wonderland.jpg**
 
 
 That's All, Folks! 
