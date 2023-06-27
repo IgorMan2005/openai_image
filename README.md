@@ -79,5 +79,10 @@ openai_image.get_image('Alice in Wonderland')
 Your image file ready: **/images/Alice_in_Wonderland.jpg**
 
 
+### Documentation
+
+https://best-itpro.ru/news/openai_image/
+
+
 That's All, Folks! 
 ;)
