@@ -160,8 +160,8 @@ cython_debug/
 #.idea/
 
 # By IgorMan
-openai_image/settings.py
-settings.py
+example_developer.py
+openai_data.json
 .idea/
 
 openai_image.egg-info/

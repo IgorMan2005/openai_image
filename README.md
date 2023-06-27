@@ -2,7 +2,7 @@
 Python script for generating image from text by Open AI
 
 
-<image src="https://igorman2005.github.io/images/openai-image.jpg" alt="openai_image">
+<img src="https://igorman2005.github.io/images/openai-image.jpg" alt="openai_image">
 
 
 **1. Install openai & openai-image**
@@ -20,30 +20,27 @@ pip install openai-image
 
 https://platform.openai.com/account/api-keys
 
-create file settings.py in your folder/
 
-put this key to settings.py file
+
+**3. Settings**
 
 ```
 API_KEY = 'your-secret-openai-api-key'
-```
 
-**3. Set image size**
-
-settings.py:
-
-```
 PIC_SIZE = '256x256'
+
+IMAGES = ''
+
+TARGET_TEXT = ''
 ```
 
-(options :'256x256', '512x512', '1024x1024')
+PIC_SIZE options :'256x256', '512x512', '1024x1024'
 
+IMAGES options: if IMAGES = '', script will use current folder. But you can set your own dir, for example: IMAGES = 'D:\Pictures'
 
-**4. Mkdir images**
+TARGET_TEXT options: TARGET_TEXT = '', you will input your target text from keyboard. And you can set it in code, for example TARGET_TEXT = 'Alice in Wonderland'
 
-Create folder 'images' (foder for ready images)
-
-**5. Use openai_image**
+**4. Use openai_image**
 
 ```
 import openai_image
@@ -54,29 +51,46 @@ import openai_image
 ```
 import openai_image
 
-openai_image.get_image()
+API_KEY = 'your-secret-openai-api-key'
+
+PIC_SIZE = '256x256'
+
+IMAGES = ''
+
+TARGET_TEXT = ''
+
+openai_image.get_image(API_KEY, PIC_SIZE, IMAGES, TARGET_TEXT)
 
 ```
 Prompt target text: **blue bird**
 
-<image src="https://igorman2005.github.io/images/blue_bird.jpg" alt="openai_image blue bird">
+<img src="https://igorman2005.github.io/images/blue_bird.jpg" alt="openai_image blue bird">
 
-Your image file ready: **/images/blue_bird.jpg**
+Your image file ready: **blue_bird.png**
 
 
 
 *Example2:*
 
 ```
-import openai_image
+from openai_image import *
 
-openai_image.get_image('Alice in Wonderland')
+API_KEY = 'your-secret-openai-api-key'
+
+PIC_SIZE = '256x256'
+
+IMAGES = 'D:\Pictures\'
+
+TARGET_TEXT = 'Alice in Wonderland'
+
+get_image(API_KEY, PIC_SIZE, IMAGES, TARGET_TEXT)
+
 
 ```
 
-<image src="https://igorman2005.github.io/images/Alice_in_Wonderland.jpg" alt="openai image Alice in Wonderland">
+<img src="https://igorman2005.github.io/images/Alice_in_Wonderland.jpg" alt="openai image Alice in Wonderland">
 
-Your image file ready: **/images/Alice_in_Wonderland.jpg**
+Your image file ready: **D:\Pictures\Alice_in_Wonderland.png**
 
 
 ### Documentation
