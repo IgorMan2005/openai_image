@@ -45,21 +45,21 @@ Create folder 'images' (foder for ready images)
 import openai_image
 ```
 
-* Example1:*
+*Example1:*
 
 ```
 import openai_image
 
 openai_image.get_image()
 
-Prompt target text: helicopter
-
 ```
+Prompt target text: **helicopter**
+
 Your image file ready: /images/helicopter.jpg
 
 
 
-* Example2:*
+*Example2:*
 
 ```
 import openai_image
